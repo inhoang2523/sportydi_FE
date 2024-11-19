@@ -1,0 +1,40 @@
+{
+  "build": {
+    "preview": {
+      "android": {
+        "buildType": "apk",
+        "env": {
+          "EXPO_NO_DOCTOR": "true"
+        }
+      }
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease",
+        "env": {
+          "EXPO_NO_DOCTOR": "true"
+        }
+      }
+    },
+    "preview3": {
+      "developmentClient": true,
+      "env": {
+        "EXPO_NO_DOCTOR": "true"
+      }
+    },
+    "preview4": {
+      "android": {
+        "distribution": "internal",
+        "buildType": "apk"
+    }
+  },
+    "production": {
+      "android": {
+        "buildType": "apk",
+        "env": {
+          "EXPO_NO_DOCTOR": "true"
+        }
+      }
+    }
+  }
+}
